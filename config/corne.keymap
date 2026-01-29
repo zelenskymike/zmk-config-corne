@@ -63,7 +63,7 @@
         // ESC: J + K (vim-style, самый популярный комбо)
         combo_esc {
             timeout-ms = <50>;
-ions = <19 20>;
+key-positions = <19 20>;
             bindings = <&kp ESC>;
             layers = <BASE NAV SYM FUN>;
         };
@@ -269,6 +269,14 @@ ions = <19 20>;
             bindings = <&kp>, <&kp>;
         };
 
+        // Tap-dance: LCTRL → 1x = LCTRL, 2x = Ctrl+Space (переключение языка)
+        td_ctrl_lang: tap_dance_ctrl_lang {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LCTRL>, <&kp LC(SPACE)>;
+        };
+
         // Layer-tap с quick-tap для быстрого повторения
         ltq: layer_tap_quick {
             compatible = "zmk,behavior-hold-tap";
@@ -308,8 +316,8 @@ ions = <19 20>;
         base_layer {
             bindings = <
 &kp TAB    &kp Q        &kp W       &kp E        &kp R        &kp T        &kp Y  &kp U        &kp I        &kp O       &kp P          &kp LBKT
-&mt LSHFT  &hml LGUI A  &hml LALT S &hml LSHFT D &hml LCTRL F &kp G        &kp H  &hmr RSHFT J &hmr RCTRL K &hmr RALT L &hmr RGUI SEMI &kp SQT
-&kp LCTRL  &kp Z        &kp X       &kp C        &kp V        &kp B        &kp N  &kp M        &kp COMMA    &kp DOT     &kp FSLH       &kp RBKT
+&kp LSHFT  &hml LGUI A  &hml LALT S &hml LSHFT D &hml LCTRL F &kp G        &kp H  &hmr RSHFT J &hmr RCTRL K &hmr RALT L &hmr RGUI SEMI &kp SQT
+&td_ctrl_lang &kp Z     &kp X       &kp C        &kp V        &kp B        &kp N  &kp M        &kp COMMA    &kp DOT     &kp FSLH       &kp RBKT
                                     &kp LGUI     &ltq NAV BSPC &kp SPACE   &mt RSHFT RET &ltq SYM BSPC &kp RALT
             >;
         };

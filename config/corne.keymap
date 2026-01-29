@@ -63,7 +63,7 @@
         // ESC: J + K (vim-style, самый популярный комбо)
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <19 20>;
+ions = <19 20>;
             bindings = <&kp ESC>;
             layers = <BASE NAV SYM FUN>;
         };
@@ -212,6 +212,14 @@
             layers = <BASE>;
         };
 
+        // Language switch: Ctrl+Space via , + . (одна рука, быстро)
+        combo_lang {
+            timeout-ms = <50>;
+            key-positions = <32 33>;  // , + .
+            bindings = <&kp LC(SPACE)>;
+            layers = <BASE>;
+        };
+
         // Bluetooth Clear: все 4 угла (безопасность)
         combo_bt_clr {
             timeout-ms = <100>;
@@ -300,7 +308,7 @@
         base_layer {
             bindings = <
 &kp TAB    &kp Q        &kp W       &kp E        &kp R        &kp T        &kp Y  &kp U        &kp I        &kp O       &kp P          &kp LBKT
-&mt LSHFT TAB   &hml LGUI A  &hml LALT S &hml LSHFT D &hml LCTRL F &kp G        &kp H  &hmr RSHFT J &hmr RCTRL K &hmr RALT L &hmr RGUI SEMI &kp SQT
+&mt LSHFT  &hml LGUI A  &hml LALT S &hml LSHFT D &hml LCTRL F &kp G        &kp H  &hmr RSHFT J &hmr RCTRL K &hmr RALT L &hmr RGUI SEMI &kp SQT
 &kp LCTRL  &kp Z        &kp X       &kp C        &kp V        &kp B        &kp N  &kp M        &kp COMMA    &kp DOT     &kp FSLH       &kp RBKT
                                     &kp LGUI     &ltq NAV BSPC &kp SPACE   &mt RSHFT RET &ltq SYM BSPC &kp RALT
             >;

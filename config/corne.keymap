@@ -300,9 +300,9 @@
         base_layer {
             bindings = <
 &kp TAB    &kp Q        &kp W       &kp E        &kp R        &kp T        &kp Y  &kp U        &kp I        &kp O       &kp P          &kp LBKT
-&kp ESC    &hml LGUI A  &hml LALT S &hml LSHFT D &hml LCTRL F &kp G        &kp H  &hmr RSHFT J &hmr RCTRL K &hmr RALT L &hmr RGUI SEMI &kp SQT
-&kp LSHFT  &kp Z        &kp X       &kp C        &kp V        &kp B        &kp N  &kp M        &kp COMMA    &kp DOT     &kp FSLH       &kp RBKT
-                                    &kp LGUI     &ltq NAV BSPC &kp SPACE   &kp RET &ltq SYM DEL &kp RALT
+&mp TAB LSHFT   &hml LGUI A  &hml LALT S &hml LSHFT D &hml LCTRL F &kp G        &kp H  &hmr RSHFT J &hmr RCTRL K &hmr RALT L &hmr RGUI SEMI &kp SQT
+&kp LCTRL  &kp Z        &kp X       &kp C        &kp V        &kp B        &kp N  &kp M        &kp COMMA    &kp DOT     &kp FSLH       &kp RBKT
+                                    &kp LGUI     &ltq NAV BSPC &kp SPACE   &mt RSHFT RET &ltq SYM BSPC &kp RALT
             >;
         };
 
@@ -349,8 +349,8 @@
 
         sym_layer {
             bindings = <
-&trans  &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET &kp AMPS  &kp ASTRK &kp GRAVE &kp TILDE &trans
-&trans  &kp PLUS  &kp EQUAL &kp LPAR  &kp RPAR  &kp DQT      &kp SQT   &kp LBRC  &kp RBRC  &kp MINUS &kp UNDER &trans
+&trans  &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET &kp AMPS  &kp ASTRK &kp GRAVE &kp TILDE &kp DEL
+&trans  &kp PLUS  &kp EQUAL &kp LPAR  &kp RPAR  &kp DQT      &kp SQT   &kp LBRC  &kp RBRC  &kp MINUS &kp UNDER &kp PIPE
 &trans  &kp PIPE  &kp BSLH  &kp LBKT  &kp RBKT  &kp LT       &kp GT    &kp FSLH  &kp QMARK &kp COLON &kp SEMI  &trans
                             &trans    &mo FUN   &trans       &trans    &trans    &trans
             >;

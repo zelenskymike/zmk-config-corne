@@ -314,6 +314,7 @@ key-positions = <19 20>;
         // ═══════════════════════════════════════════════════════════════════
 
         base_layer {
+            display-name = "BASE";
             bindings = <
 &kp TAB    &kp Q        &kp W       &kp E        &kp R        &kp T        &kp Y  &kp U        &kp I        &kp O       &kp P          &kp LBKT
 &kp LSHFT  &hml LGUI A  &hml LALT S &hml LSHFT D &hml LCTRL F &kp G        &kp H  &hmr RCTRL J  &hmr RSHFT K  &hmr RALT L &hmr RGUI SEMI &kp SQT
@@ -337,6 +338,7 @@ key-positions = <19 20>;
         // ═══════════════════════════════════════════════════════════════════
 
         nav_layer {
+            display-name = "NAV";
             bindings = <
 &trans  &kp N1    &kp N2    &kp N3     &kp N4     &kp N5       &kp N6    &kp N7     &kp N8    &kp N9     &kp N0  &trans
 &trans  &kp LGUI  &kp LALT  &kp LSHFT  &kp LCTRL  &trans       &kp LEFT  &kp DOWN   &kp UP    &kp RIGHT  &trans  &trans
@@ -364,6 +366,7 @@ key-positions = <19 20>;
         // ═══════════════════════════════════════════════════════════════════
 
         sym_layer {
+            display-name = "SYM";
             bindings = <
 &trans  &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET &kp AMPS  &kp ASTRK &kp GRAVE &kp TILDE &kp DEL
 &trans  &kp PLUS  &kp EQUAL &kp LPAR  &kp RPAR  &kp DQT      &kp SQT   &kp LBRC  &kp RBRC  &kp MINUS &kp UNDER &kp PIPE
@@ -387,6 +390,7 @@ key-positions = <19 20>;
         // ═══════════════════════════════════════════════════════════════════
 
         fun_layer {
+            display-name = "FUN";
             bindings = <
 &bt BT_CLR &kp F1       &kp F2       &kp F3       &kp F4       &kp F5          &kp F6     &kp F7       &kp F8       &kp F9       &kp F10      &trans
 &trans     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &kp F11      &kp F12      &trans

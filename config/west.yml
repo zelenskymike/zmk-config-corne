@@ -7,7 +7,9 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      # Known-good ZMK main revision. Update deliberately after reviewing
+      # upstream migration notes and verifying both halves in CI.
+      revision: 268b1b1e82150460f00fd701bcd08583d5c75d29
       import: app/west.yml
   self:
     path: config
